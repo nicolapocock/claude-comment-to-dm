@@ -7,6 +7,7 @@
 
 ## Copy
 - Public reply: [ ] / variations: [ ] / [ ]
+- Opening DM + button (ManyChat): [ ]
 - Follow check: [message, or "off"]
 - DM: [text]
 - Email ask: [text, or "off"]

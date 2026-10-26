@@ -44,12 +44,14 @@ install the comment-to-dm skill from github.com/nicolapocock/claude-comment-to-d
 or in terminal:
 
 ```bash
-npx skills add nicolapocock/claude-comment-to-dm
+npx skills add nicolapocock/claude-comment-to-dm -g
 ```
+
+(the `-g` installs it for every folder, not just the one you're in)
 
 ## the first time
 
-claude asks you a few quick questions (which tool, a couple of DMs you've written so it gets your voice, your emoji, whether you want a follow check or emails) and saves the answers in a `dm-setup.md` file. you only answer once, every automation after that just uses it.
+claude asks you a few quick questions (which tool, a couple of DMs you've written so it gets your voice, your emoji, whether you want a follow check or emails) and saves the answers in `~/.comment-to-dm/dm-setup.md`. you only answer once, every automation after that just uses it.
 
 ## things i learned the hard way (already built in)
 

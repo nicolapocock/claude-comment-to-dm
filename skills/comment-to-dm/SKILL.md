@@ -12,9 +12,15 @@ Builds the comment-keyword → DM automation for an Instagram post. Someone comm
 
 **You do the building, not the user.** The user's whole job is to answer a few questions, OK the copy, test it, and press Go Live (or tell you to). Only fall back to click-by-click instructions when you genuinely can't reach the tool.
 
+Paths starting `references/` are relative to this skill's own folder, not the user's current folder.
+
+The user's files live in `~/.comment-to-dm/`, so they work from any folder:
+- `~/.comment-to-dm/dm-setup.md`: their answers to the setup interview
+- `~/.comment-to-dm/automations/<KEYWORD>.md`: one record per automation
+
 ## First run: the setup interview
 
-Look for `dm-setup.md` in the current project folder. If it exists, read it and skip to "Building an automation". If it doesn't, ask these questions ONE AT A TIME, in plain English, then save the answers to `dm-setup.md` (template: `references/dm-setup-template.md`) and show the user the file.
+Look for `~/.comment-to-dm/dm-setup.md`. If it exists, read it and skip to "Building an automation". If it doesn't, ask these questions ONE AT A TIME, in plain English, then save the answers there (template: `references/dm-setup-template.md`) and show the user the file.
 
 1. **Which tool do you use, or want to use?** ManyChat, Zernio, or not sure. If they're not sure, explain the trade-off in two lines:
    - ManyChat is the most common. You build it for them in your browser while they're logged in.
@@ -43,6 +49,7 @@ Ask for whatever is missing:
 
 ### 3. Write the copy, in their voice from `dm-setup.md`
 - **Public reply under the comment,** plus 2 variations so it doesn't look robotic, e.g. "check your dms", "just sent it over", "it's in your dms".
+- **Opening DM (ManyChat only):** one short line whose only job is getting a tap, with a button, e.g. "you commented GUIDE, tap below and i'll send it straight over" + button "send it over". Zernio doesn't need this step.
 - **Follow check message** (if they want one): short and friendly, e.g. "one tiny thing first, give me a follow and tap below and it's all yours".
 - **The DM:** the link, plus one line on what to do with it first. Warm, not salesy. Don't put "save this" or "send this to a friend" in a DM, it reads as staged once someone's in a private chat.
 - **Email ask** (if they want emails): say what they'll get and that they can unsubscribe anytime.
@@ -66,7 +73,7 @@ Tell them in a few lines what you built: keyword, which post, follow check on/of
 Then they press **Go Live**, or tell you to. You may press it (ManyChat) or switch it on (Zernio) only when they've said so in this conversation, for this automation.
 
 ### 6. Save a record
-Write `dm-automations/<KEYWORD>.md` in their project (template: `references/automation-log-template.md`). Include the tool, the keyword, the post, all the copy, the settings, the status (paused, draft or live) and the test checklist. Never write that something is live when it's paused.
+Write `~/.comment-to-dm/automations/<KEYWORD>.md` (template: `references/automation-log-template.md`). Include the tool, the keyword, the post, all the copy, the settings, the status (paused, draft or live) and the test checklist. Never write that something is live when it's paused.
 
 ## Emails
 - Zernio doesn't save emails to a field. People reply with their email in the Instagram inbox, and the user exports them by hand.
