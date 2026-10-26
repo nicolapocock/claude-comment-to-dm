@@ -1,6 +1,6 @@
 ---
 name: comment-to-dm
-description: "Sets up an Instagram 'comment a word, get the freebie' automation: picks the keyword, writes the public reply, the follow check, the DM and the email ask in the user's own voice, then builds it in Zernio or ManyChat (or walks them through the clicks). Use when someone wants a comment-to-DM, keyword DM, auto DM, DM freebie or lead magnet for a post, or asks why their keyword automation isn't firing."
+description: "Builds an Instagram 'comment a word, get the freebie' automation FOR the user: picks the keyword, writes the public reply, follow check, DMs and email ask in their voice, then builds the whole thing in ManyChat (in Claude's browser) or Zernio (via its connector), so the user only reviews it and presses Go Live. Use when someone wants a comment-to-DM, keyword DM, auto DM, ManyChat automation, DM freebie or lead magnet for a post, or asks why their keyword automation isn't firing."
 version: 1.0.0
 author: getgitgirl
 license: MIT
@@ -10,13 +10,15 @@ license: MIT
 
 Builds the comment-keyword → DM automation for an Instagram post. Someone comments a word, like GUIDE, and gets a DM with the freebie a few seconds later.
 
+**You do the building, not the user.** The user's whole job is to answer a few questions, OK the copy, test it, and press Go Live (or tell you to). Only fall back to click-by-click instructions when you genuinely can't reach the tool.
+
 ## First run: the setup interview
 
 Look for `dm-setup.md` in the current project folder. If it exists, read it and skip to "Building an automation". If it doesn't, ask these questions ONE AT A TIME, in plain English, then save the answers to `dm-setup.md` (template: `references/dm-setup-template.md`) and show the user the file.
 
 1. **Which tool do you use, or want to use?** ManyChat, Zernio, or not sure. If they're not sure, explain the trade-off in two lines:
-   - ManyChat is the most common, and you set it up by clicking in its dashboard.
-   - Zernio can be built for you directly through its Claude connector, and it has no contact cap.
+   - ManyChat is the most common. You build it for them in your browser while they're logged in.
+   - Zernio you build through its Claude connector, no browser needed, and it has no contact cap.
    - Both have paid plans, so tell them to check current pricing themselves. Never quote prices.
 2. **Your Instagram handle.**
 3. **How do your DMs sound?** Ask them to paste 2 or 3 DMs or captions they've written. Work out their tone from those (casual or polished, emoji or not, lowercase or normal case) and write it down. Don't ask them to describe their voice, people can't.
@@ -47,17 +49,21 @@ Ask for whatever is missing:
 
 Show them all the copy and the settings in one short message. Wait for their OK before building anything.
 
-### 4. Build it
-- **Zernio** (if its connector is available in this session): follow `references/zernio.md`. Create it **paused**, and only switch it on when the user says go.
+### 4. Build it yourself
 - **ManyChat:** follow `references/manychat.md`.
-  - If you can control their browser and they've said you can, build it as a draft.
-  - Otherwise walk them through it click by click, with the copy ready to paste.
-  - Never click Go Live yourself.
+  - Use your browser tools: the desktop app's built-in browser, or the Claude in Chrome extension.
+  - If the user is logged out, ask them to log in to ManyChat in that browser themselves. Never type their password.
+  - Build the whole automation and save it as a draft.
+  - Fall back to click-by-click steps only if you can't reach ManyChat at all. Say why.
+- **Zernio** (if its connector is available in this session): follow `references/zernio.md`. Create the automation **paused**.
 
-### 5. Test before going live
+### 5. Hand it over for the go
+Tell them in a few lines what you built: keyword, which post, follow check on/off, email on/off. Then give them the test:
 1. Test it from a second Instagram account. Commenting on your own post doesn't trigger it.
 2. Check every message arrives, and that the link opens on a phone.
 3. Once the post is live, check the automation is attached to the right post (or works on any post, if it's set up that way).
+
+Then they press **Go Live**, or tell you to. You may press it (ManyChat) or switch it on (Zernio) only when they've said so in this conversation, for this automation.
 
 ### 6. Save a record
 Write `dm-automations/<KEYWORD>.md` in their project (template: `references/automation-log-template.md`). Include the tool, the keyword, the post, all the copy, the settings, the status (paused, draft or live) and the test checklist. Never write that something is live when it's paused.
@@ -78,6 +84,7 @@ Check in this order:
 
 ## Rules
 - Never send a DM, comment or reply on the user's behalf without their OK on the exact text.
-- Never switch an automation on without their explicit go.
+- Never switch an automation on (Go Live) without their explicit go for that automation.
+- Never type passwords or payment details. Never change plans, billing or account settings.
 - Never invent details about the freebie. If you don't know what's in it, ask.
 - Never paste API keys, passwords or tokens into chat. If a tool needs a key, tell them where to add it themselves.
