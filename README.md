@@ -19,7 +19,7 @@ and claude:
 1. checks the keyword won't fire on normal comments
 2. writes the public reply, the follow check, the DMs and the email ask in your voice
 3. shows you all of it and waits for your ok
-4. opens manychat in its browser and **builds the whole automation for you**, saved as a draft
+4. opens manychat in its browser and **builds the whole automation for you**, then leaves it open for you to check
 5. tells you exactly what to test, then you press go live, or tell claude to
 
 you don't click through manychat at all.

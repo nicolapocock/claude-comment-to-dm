@@ -60,7 +60,7 @@ Show them all the copy and the settings in one short message. Wait for their OK 
 - **ManyChat:** follow `references/manychat.md`.
   - Use your browser tools: the desktop app's built-in browser, or the Claude in Chrome extension.
   - If the user is logged out, ask them to log in to ManyChat in that browser themselves. Never type their password.
-  - Build the whole automation and save it as a draft.
+  - Build the whole automation in its own tab and leave that tab open for review. ManyChat's quick builder has no draft save, so closing or leaving the tab loses it.
   - Fall back to click-by-click steps only if you can't reach ManyChat at all. Say why.
 - **Zernio** (if its connector is available in this session): follow `references/zernio.md`. Create the automation **paused**.
 
@@ -73,7 +73,7 @@ Tell them in a few lines what you built: keyword, which post, follow check on/of
 Then they press **Go Live**, or tell you to. You may press it (ManyChat) or switch it on (Zernio) only when they've said so in this conversation, for this automation.
 
 ### 6. Save a record
-Write `~/.comment-to-dm/automations/<KEYWORD>.md` (template: `references/automation-log-template.md`). Include the tool, the keyword, the post, all the copy, the settings, the status (paused, draft or live) and the test checklist. Never write that something is live when it's paused.
+Write `~/.comment-to-dm/automations/<KEYWORD>.md` (template: `references/automation-log-template.md`). Include the tool, the keyword, the post, all the copy, the settings, the status (paused, built and waiting for go live, or live) and the test checklist. Never write that something is live when it's paused.
 
 ## Emails
 - Zernio doesn't save emails to a field. People reply with their email in the Instagram inbox, and the user exports them by hand.
