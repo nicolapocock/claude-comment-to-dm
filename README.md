@@ -20,7 +20,8 @@ and claude:
 2. writes the public reply, the follow check, the DMs and the email ask in your voice
 3. shows you all of it and waits for your ok
 4. opens manychat in its browser and **builds the whole automation for you**, then leaves it open for you to check
-5. tells you exactly what to test, then you press go live, or tell claude to
+5. you check it on manychat's preview phone, then press go live, or tell claude to
+6. you comment the keyword from a second account to make sure it fires. if anything's off, claude fixes it
 
 you don't click through manychat at all.
 

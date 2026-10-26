@@ -12,10 +12,11 @@
 - DM: [text]
 - Email ask: [text, or "off"]
 
-## Test checklist
+## Go live, then test
+- [ ] checked the preview
+- [ ] switched on (by me, or Claude on my say-so)
 - [ ] commented from a second account
 - [ ] public reply showed up
 - [ ] DM arrived, link opens on a phone
 - [ ] follow check works (if on)
 - [ ] attached to the right post (or any post)
-- [ ] switched on by me

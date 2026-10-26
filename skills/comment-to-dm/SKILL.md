@@ -10,7 +10,7 @@ license: MIT
 
 Builds the comment-keyword → DM automation for an Instagram post. Someone comments a word, like GUIDE, and gets a DM with the freebie a few seconds later.
 
-**You do the building, not the user.** The user's whole job is to answer a few questions, OK the copy, test it, and press Go Live (or tell you to). Only fall back to click-by-click instructions when you genuinely can't reach the tool.
+**You do the building, not the user.** The user's whole job is to answer a few questions, OK the copy, press Go Live (or tell you to), then test it. Only fall back to click-by-click instructions when you genuinely can't reach the tool.
 
 Paths starting `references/` are relative to this skill's own folder, not the user's current folder.
 
@@ -65,12 +65,15 @@ Show them all the copy and the settings in one short message. Wait for their OK 
 - **Zernio** (if its connector is available in this session): follow `references/zernio.md`. Create the automation **paused**.
 
 ### 5. Hand it over for the go
-Tell them in a few lines what you built: keyword, which post, follow check on/off, email on/off. Then give them the test:
-1. Test it from a second Instagram account. Commenting on your own post doesn't trigger it.
-2. Check every message arrives, and that the link opens on a phone.
-3. Once the post is live, check the automation is attached to the right post (or works on any post, if it's set up that way).
+An automation can't be tested until it's live: ManyChat's quick builder has no draft, and a paused Zernio automation doesn't fire. So the order is review, go live, then test straight away.
 
-Then they press **Go Live**, or tell you to. You may press it (ManyChat) or switch it on (Zernio) only when they've said so in this conversation, for this automation.
+1. **Review:** tell them in a few lines what you built (keyword, which post, follow check on/off, email on/off), and show the preview (a screenshot of ManyChat's preview phone, or the Zernio settings).
+2. **Go live:** they press **Go Live**, or tell you to. You may press it (ManyChat) or switch it on (Zernio) only when they've said so in this conversation, for this automation.
+3. **Test straight away:**
+   - They comment the keyword from a second Instagram account. Commenting on your own post doesn't trigger it.
+   - They check the public reply shows up, every DM arrives, and the link opens on a phone.
+   - Once the post is live, check the automation is attached to the right post (or works on any post).
+4. **If anything's wrong,** fix it right away. If it's sending something broken, pause it first (ManyChat: stop it; Zernio: `is_active: false`), then fix it.
 
 ### 6. Save a record
 Write `~/.comment-to-dm/automations/<KEYWORD>.md` (template: `references/automation-log-template.md`). Include the tool, the keyword, the post, all the copy, the settings, the status (paused, built and waiting for go live, or live) and the test checklist. Never write that something is live when it's paused.

@@ -31,7 +31,8 @@ The page layout moves every time you change an option (picking a post type colla
 8. **And then, they will get → a DM with a link:** type the DM text, then click **Add A Link**. A popup asks for the button label and the URL. Fill both and click that popup's Save. That only adds the link to the form, it doesn't publish anything.
 9. There's also an optional **follow up DM if they don't click the link**. Leave it off unless they asked for one.
 10. Check the preview phone on the right. Its Post / Comments / DM tabs show each step.
-11. Take a screenshot, show the user, give them the test checklist, and leave the tab open. **Don't press Go Live** unless they've told you to for this automation.
+11. Take a screenshot of the preview, show the user, and leave the tab open. **Don't press Go Live** unless they've told you to for this automation.
+12. Once it's live, give them the test (comment from a second account). If something's wrong, open it from My Automations to edit or stop it.
 
 ## How to type into ManyChat
 - Its message fields can drop letters under fast typing. Type in short chunks of about 25 to 30 characters, with a pause of about a second between them.
