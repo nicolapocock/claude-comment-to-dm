@@ -37,7 +37,7 @@ Look for `~/.comment-to-dm/dm-setup.md`. If it exists, read it and skip to "Buil
 
 ### 1. Get the details
 Ask for whatever is missing:
-- the freebie (a link: Google Doc, PDF, Notion page, GitHub repo)
+- the freebie (a link: Google Doc, PDF, Notion page, GitHub repo). Check the link opens without signing in. A Google Doc must be shared as "anyone with the link".
 - the post it's for, and whether that post is live yet
 - the keyword, if they already said one in the video or caption
 
@@ -87,7 +87,7 @@ Write `~/.comment-to-dm/automations/<KEYWORD>.md` (template: `references/automat
 Check in this order:
 1. **The plan's contact limit (ManyChat).** When it's full, new commenters silently get nothing. Look for a banner in the dashboard.
 2. **Is the automation on?** Is it attached to the right post (or set to work on any post)?
-3. **Does the keyword match the caption exactly?** Check the match setting too: whole word vs anywhere in the comment.
+3. **Does the keyword match the caption exactly?** Check the match setting too, if the tool has one (Zernio: `match_mode`).
 4. **Is someone stuck at the follow check?** Their DM may be in Message Requests.
 5. **Is the same keyword live in two automations or two tools?**
 6. **Was the test comment from the account itself?** That never triggers it.
@@ -98,3 +98,4 @@ Check in this order:
 - Never type passwords or payment details. Never change plans, billing or account settings.
 - Never invent details about the freebie. If you don't know what's in it, ask.
 - Never paste API keys, passwords or tokens into chat. If a tool needs a key, tell them where to add it themselves.
+- Never use Zernio's paid support tool without asking first.
