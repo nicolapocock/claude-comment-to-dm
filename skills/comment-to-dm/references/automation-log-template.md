@@ -1,6 +1,6 @@
 # [KEYWORD]
 
-- **Tool:** [ManyChat / Zernio] · automation id: [ ]
+- **Tool:** ManyChat · automation id: [ ]
 - **Post:** [link, or "any post", or "next post or reel"]
 - **Status:** [paused / built, waiting for go live / live]
 - **Freebie:** [link]
