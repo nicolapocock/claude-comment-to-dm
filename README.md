@@ -33,8 +33,6 @@ apart from logging in, you don't click through manychat at all. and if one stops
 - a second instagram account (a friend's is fine) to test it from
 - the freebie as a link anyone can open (for google docs: share, then "anyone with the link")
 
-or, if you use **zernio** instead of manychat, claude builds it through zernio's claude connector, no browser needed.
-
 ## install
 
 open claude code and paste:
@@ -55,12 +53,11 @@ then start a new chat so claude picks it up.
 
 ## the first time
 
-claude asks you a few quick questions (which tool, a couple of DMs you've written so it gets your voice, your emoji, whether you want a follow check or emails) and saves the answers in `~/.comment-to-dm/dm-setup.md`. you only answer once, every automation after that just uses it.
+claude asks you a few quick questions (a couple of DMs you've written so it gets your voice, your emoji, whether you want a follow check or emails) and saves the answers in `~/.comment-to-dm/dm-setup.md`. you only answer once, every automation after that just uses it.
 
 ## things i learned the hard way (already built in)
 
 - **contact limits:** when my manychat plan filled up, new commenters silently got nothing. claude checks for that banner first
-- **people who got missed:** on zernio, claude can find commenters who got nothing and, once you ok the message, send it to them
 - **keyword clashes:** a common word like "hey" fires on every "hey love this"
 - **two words, one automation:** spelling variants go in the same automation, or people get two DMs
 - **test from a second account:** commenting on your own post never triggers it
@@ -71,6 +68,5 @@ claude asks you a few quick questions (which tool, a couple of DMs you've writte
 
 - it's only been tested with instagram
 - if claude can't get into manychat in its browser (logged out, or a popup in the way), it'll tell you and walk you through the clicks instead
-- zernio's connector setup isn't covered here, follow zernio's own docs for that
 
 made by [@getgitgirl](https://instagram.com/getgitgirl). MIT licensed, use it however you like.
