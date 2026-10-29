@@ -43,7 +43,7 @@ When the user says go, update it with `is_active: true`. After the first real co
 
 ## People who got missed
 If commenters got nothing (it was paused, or they commented before it existed):
-1. Find their comments.
+1. Find their comments. Before sending anything, show the user the list of commenters and the exact reply text. Send nothing until they say yes in this conversation.
 2. Send each one a private reply to their comment.
    - It's one private reply per comment, and only within 7 days.
    - Use plain text.
