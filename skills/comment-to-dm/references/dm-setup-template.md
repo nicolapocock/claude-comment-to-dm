@@ -2,7 +2,6 @@
 
 Written by the comment-to-dm skill from the setup interview. Edit it any time.
 
-- **Tool:** [ManyChat / Zernio]
 - **Instagram handle:** @[handle]
 - **Voice:** [e.g. casual, all lowercase, short sentences, one emoji per message]
 - **Example DMs I've written:**
