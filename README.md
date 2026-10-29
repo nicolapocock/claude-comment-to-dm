@@ -4,7 +4,7 @@ you know the "comment GUIDE and i'll send it to you" posts? i don't build mine a
 
 people are selling courses on this. this one's free.
 
-> **status: early.** it's the exact process i use on [@getgitgirl](https://instagram.com/getgitgirl), but this public version is new. tell me what breaks.
+> **status: early.** it's the exact process i use on [@getgitgirl](https://instagram.com/getgitgirl), but this public version is new. tell me what breaks (open an issue here or DM me on instagram).
 
 ## what it does
 
@@ -23,14 +23,15 @@ and claude:
 5. you check it on manychat's preview phone, then press go live, or tell claude to
 6. you comment the keyword from a second account to make sure it fires. if anything's off, claude fixes it
 
-you don't click through manychat at all.
+apart from logging in, you don't click through manychat at all. and if one stops working, ask claude "why isn't my GUIDE automation firing?" and it works through the usual causes.
 
 ## what you need
 
 - the claude desktop app on a paid claude plan, using the code tab (that's claude code)
 - claude's browser, so it can work in manychat: the built-in browser in the desktop app, or the claude in chrome extension
 - a manychat account, connected to your instagram professional account, and logged in inside that browser
-- the freebie itself, as a link
+- a second instagram account (a friend's is fine) to test it from
+- the freebie as a link anyone can open (for google docs: share, then "anyone with the link")
 
 or, if you use **zernio** instead of manychat, claude builds it through zernio's claude connector, no browser needed.
 
@@ -39,16 +40,18 @@ or, if you use **zernio** instead of manychat, claude builds it through zernio's
 open claude code and paste:
 
 ```
-install the comment-to-dm skill from github.com/nicolapocock/claude-comment-to-dm
+install the comment-to-dm skill from github.com/nicolapocock/claude-comment-to-dm. copy the skills/comment-to-dm folder into ~/.claude/skills/
 ```
 
-or in terminal:
+or in terminal (needs node.js installed):
 
 ```bash
-npx skills add nicolapocock/claude-comment-to-dm -g
+npx skills add nicolapocock/claude-comment-to-dm -g -a claude-code -y
 ```
 
 (the `-g` installs it for every folder, not just the one you're in)
+
+then start a new chat so claude picks it up.
 
 ## the first time
 
@@ -57,6 +60,7 @@ claude asks you a few quick questions (which tool, a couple of DMs you've writte
 ## things i learned the hard way (already built in)
 
 - **contact limits:** when my manychat plan filled up, new commenters silently got nothing. claude checks for that banner first
+- **people who got missed:** on zernio, claude can find commenters who got nothing and, once you ok the message, send it to them
 - **keyword clashes:** a common word like "hey" fires on every "hey love this"
 - **two words, one automation:** spelling variants go in the same automation, or people get two DMs
 - **test from a second account:** commenting on your own post never triggers it
