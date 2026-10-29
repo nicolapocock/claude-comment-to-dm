@@ -11,9 +11,10 @@ You build this yourself in the browser (the desktop app's built-in browser, or t
 1. Open app.manychat.com in a new tab.
    - If it shows a login page, ask the user to log in themselves in that browser. Never type their password.
    - ManyChat's emailed sign-in link opens in their default browser, so if you're in a different browser, they need to sign in with Google, Facebook or Apple inside yours.
-2. Close any upgrade popup with its X. Never click an upgrade or plan button.
+2. Close any upgrade popup with its X. Never click an upgrade or plan button. If a cookie banner shows, pick the most private option.
 3. Check the top banner. "Your new contacts aren't getting automations. You've hit your plan limit" means new commenters won't get anything. Stop and tell the user before building.
 4. The Instagram account must be a professional account (business or creator), connected to ManyChat.
+5. Open My Automations and check no live automation already uses this keyword. If one does, stop and ask.
 
 ## Build it
 The page layout moves every time you change an option (picking a post type collapses the post grid, toggles open new fields). **Take a fresh screenshot, or find the element again, before every click.** Prefer element references from `find` over coordinates.
